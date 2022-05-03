@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
+import ContactMe from "../components/Footer/ContactMe";
 const animationDown = keyframes`
   /* 0%{
     top: 20px
@@ -41,6 +42,7 @@ export default function Home() {
           <FontAwesomeIcon className="fa-2xl" icon={faAngleDown} />
         </DownIcon>
         <About />
+        <ContactMe />
       </IndexLayaut>
     </>
   );
