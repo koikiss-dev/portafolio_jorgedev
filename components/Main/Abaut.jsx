@@ -30,6 +30,9 @@ const Container = styled.section`
   background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 10px;
+  @media (min-width: 1000px) {
+    margin: 0 20px;
+  }
 `;
 export const Title = styled.h2`
   font-size: 35px;
@@ -41,12 +44,22 @@ const Info = styled.p`
 `;
 const SkillsContainer = styled.div`
   width: 100%;
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+  }
 `;
 const Skill = styled.div`
   display: flex;
   align-items: center;
   margin: 1rem 0;
   max-width: 100%;
+  @media (min-width: 1000px) {
+    width: 100%;
+  }
 `;
 const SkillPorcentajeCont = styled.div`
   width: 69%;

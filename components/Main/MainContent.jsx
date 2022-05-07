@@ -7,7 +7,10 @@ const ContainerInfo = styled.main`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 21rem 0;
+  margin: 20rem 0;
+  @media (min-width: 1000px) {
+    margin: 18rem 0;
+  }
 `;
 const Info = styled.h1`
   font-family: var(--rubik);
@@ -23,6 +26,7 @@ const Button = styled.button`
   background-color: var(--primary-color);
   color: #fff;
   font-weight: 600;
+  border-radius: 5px;
   margin: ${(props) => props.margin};
 `;
 const MainContent = () => {

@@ -23,4 +23,12 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--bg-primary);
         color: #fff;
     }
+    image{
+        max-width: 100%;
+        heigth: auto;
+        object-fit: cover;
+    }
+    a{
+        text-decoration: none;
+    }
 `;

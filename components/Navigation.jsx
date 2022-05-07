@@ -27,7 +27,12 @@ const UlItems = styled.ul`
   background-color: ${(props) => props.bg};
 
   border-radius: 0 0 15px 15px;
-  @media (max-width: 1000px) {
+  @media (min-width: 1000px) {
+    position: inherit;
+    top: 0;
+    flex-direction: row;
+    border-radius: 0;
+    width: auto;
   }
 `;
 const ListNav = styled.li`
@@ -35,6 +40,10 @@ const ListNav = styled.li`
   font-size: 35px;
   color: var(--primary-color);
   font-weight: 300;
+  @media (min-width: 1000px) {
+    margin: ${(props) => props.marginMobile};
+    font-size: 25px;
+  }
 `;
 const Navigation = () => {
   const { width } = useWindowSize();
@@ -45,6 +54,8 @@ const Navigation = () => {
   useEffect(() => {
     if (width >= 1000) {
       setToggle(true);
+    } else {
+      setToggle(false);
     }
   }, [width]);
   return (
@@ -58,8 +69,12 @@ const Navigation = () => {
         visible={toggle ? "flex" : "none"}
         bg={toggle ? "var(--secondary-color)" : "var(--bg-primary)"}
       >
-        <ListNav margin="0 0 3rem 0">About me</ListNav>
-        <ListNav margin="0 0 3rem 0">Projects</ListNav>
+        <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
+          About me
+        </ListNav>
+        <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
+          Projects
+        </ListNav>
         <ListNav>Contact me</ListNav>
       </UlItems>
     </Nav>
