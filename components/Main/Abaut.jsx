@@ -85,11 +85,11 @@ const About = () => {
     <Container>
       <Title margin="0 0 10px 0">About me</Title>
       <Info>
-        Integer accumsan nisi ut nisi blandit vestibulum. Fusce gravida sed nibh
-        sed luctus. Integer ultrices quam eu lorem efficitur posuere.
-        Pellentesque in rhoncus sem. Fusce ac ipsum commodo, finibus lorem eget,
-        ornare nunc. Mauris blandit rutrum mi in congue. In nisi ligula, rutrum
-        at scelerisque non, volutpat rutrum leo. Vivamus non feugiat magna.
+        I{"'"}m Jorge, an anime enthusiast and programmer. Experienced Honduran
+        web developer, trained in all stages of advanced web development.
+        Bringing expertise in designing, installing, testing and maintaining web
+        systems. Equipped with a diverse and promising skill set. Experience
+        with ReactJS
       </Info>
       <Title margin="10px 0">My Skills</Title>
       <SkillsContainer>

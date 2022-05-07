@@ -28,13 +28,17 @@ const Button = styled.button`
   font-weight: 600;
   border-radius: 5px;
   margin: ${(props) => props.margin};
+  transition: transform ease-in-out 0.2s;
+  &:hover {
+    transform: scale(0.9);
+  }
 `;
 const MainContent = () => {
   return (
     <ContainerInfo>
       <Info>Hey 👋, my name is Jorge </Info>
       <Qualities />
-      <Button margin="20px 0">Download my cv</Button>
+      <Button margin="20px 0">Download my cv 😎</Button>
     </ContainerInfo>
   );
 };

@@ -1,17 +1,10 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { values } from "../../info/Proyects";
 //style
 const Data = styled.span`
   font-size: 25px;
 `;
-const values = [
-  "A frontend developer 🤪",
-  "A designer 🤔",
-  "A student 🤓",
-  "Latin 💯",
-  "Hondureño 🇭🇳",
-  "An apassionate of the anime 👺",
-];
 const Qualities = () => {
   const [index, setIndex] = useState(0);
   const randomInfo = () => {
@@ -19,7 +12,7 @@ const Qualities = () => {
     setIndex(randomNumber);
   };
   useEffect(() => {
-    setInterval(randomInfo, 10000);
+    setInterval(randomInfo, 8000);
   }, []);
   return <Data>{values[index]}</Data>;
 };

@@ -23,7 +23,7 @@ const ImageCont = styled.div`
     border-radius: 0px;
   }
 `;
-const InfoCont = styled.div``;
+/* const InfoCont = styled.div``; */
 const Title = styled.h3`
   font-size: 20px;
   margin: 0 0 10px 0;
@@ -38,6 +38,10 @@ const DivLinks = styled.div`
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: transform ease-in-out 0.2s;
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 `;
 const Links = styled.a`
@@ -56,7 +60,7 @@ const CardProyects = ({
       <ImageCont>
         <Image className="image" src={srcImage} alt={nameProyect} />
       </ImageCont>
-      <InfoCont>
+      <div>
         <Title>{nameProyect}</Title>
         <DivLinks>
           <div className="buttonLink">
@@ -70,7 +74,7 @@ const CardProyects = ({
             </Links>
           </div>
         </DivLinks>
-      </InfoCont>
+      </div>
     </ContainerCard>
   );
 };

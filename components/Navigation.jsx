@@ -12,8 +12,9 @@ const Nav = styled.nav`
   /* border-bottom: 1px solid var(--secondary-color); */
   position: relative;
 `;
-const Logo = styled.span`
-  font-size: 30px;
+const Logo = styled.a`
+  font-size: 35px;
+  color: var(--primary-color);
   font-family: var(--rubik);
 `;
 const UlItems = styled.ul`
@@ -44,6 +45,12 @@ const ListNav = styled.li`
     margin: ${(props) => props.marginMobile};
     font-size: 25px;
   }
+  & > a {
+    color: var(--primary-color);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 const Navigation = () => {
   const { width } = useWindowSize();
@@ -60,7 +67,7 @@ const Navigation = () => {
   }, [width]);
   return (
     <Nav bg={toggle ? "var(--secondary-color)" : "var(--bg-primary)"}>
-      <Logo>JORGEDEV</Logo>
+      <Logo href="#">JORGEDEV</Logo>
       {width <= 1000 ? (
         <FontAwesomeIcon onClick={ShowItems} className="fa-xl" icon={faBars} />
       ) : null}
@@ -70,12 +77,23 @@ const Navigation = () => {
         bg={toggle ? "var(--secondary-color)" : "var(--bg-primary)"}
       >
         <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
-          About me
+          <a href="https://github.com/JorgeDevJ" target="blank">
+            Github
+          </a>
         </ListNav>
         <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
-          Projects
+          <a
+            href="https://www.linkedin.com/in/jorge-dur%C3%B3n-850a461bb/"
+            target="blank"
+          >
+            Linkdin
+          </a>
         </ListNav>
-        <ListNav>Contact me</ListNav>
+        <ListNav>
+          <a href="https://twitter.com/jdd2_" target="blank">
+            Twitter
+          </a>
+        </ListNav>
       </UlItems>
     </Nav>
   );
