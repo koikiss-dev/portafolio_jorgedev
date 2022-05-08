@@ -69,21 +69,15 @@ const ListNav = styled.li`
 `;
 const Navigation = () => {
   const [y, setY] = useState(0);
-  const handleNavigation = useCallback(() => {
-    setY(window.scrollY);
-  }, [y]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleNavigation);
-    return () => {
-      window.removeEventListener("scroll", handleNavigation);
-    };
-  }, [handleNavigation]);
   const { width } = useWindowSize();
   const [toggle, setToggle] = useState(false);
   const ShowItems = () => {
     setToggle(!toggle);
   };
+  const handleNavigation = useCallback(() => {
+    setY(window.scrollY);
+  }, [y]); //detect scroll
   useEffect(() => {
     if (width >= 1000) {
       setToggle(true);
@@ -91,8 +85,14 @@ const Navigation = () => {
       setToggle(false);
     }
   }, [width]);
+  useEffect(() => {
+    window.addEventListener("scroll", handleNavigation);
+    return () => {
+      window.removeEventListener("scroll", handleNavigation);
+    };
+  }, [handleNavigation]);
   return (
-    <Header border={y >= 159 ? "1px solid var(--secondary-color)" : "none"}>
+    <Header border={y >= 159 ? "2px solid var(--secondary-color)" : "none"}>
       <Nav bg={y >= 159 ? "var(--bg-transparent)" : "var(--bg-primary)"}>
         <Logo href="#">JORGEDEV</Logo>
         {width <= 1000 ? (
@@ -106,7 +106,7 @@ const Navigation = () => {
         <UlItems visible={toggle ? "flex" : "none"}>
           <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
             <a href="https://github.com/JorgeDevJ" target="blank">
-              Github
+              GitHub
             </a>
           </ListNav>
           <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
@@ -114,7 +114,7 @@ const Navigation = () => {
               href="https://www.linkedin.com/in/jorge-dur%C3%B3n-850a461bb/"
               target="blank"
             >
-              Linkdin
+              LinkedIn
             </a>
           </ListNav>
           <ListNav>

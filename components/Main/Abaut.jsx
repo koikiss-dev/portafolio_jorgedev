@@ -21,9 +21,13 @@ const Info = styled.p`
 `;
 const SkillsContainer = styled.div`
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
   @media (min-width: 1000px) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 10px;
@@ -32,41 +36,33 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   display: flex;
   align-items: center;
-  margin: 1rem 0;
-  max-width: 100%;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  /* max-width: 100%;
   @media (min-width: 1000px) {
     width: 100%;
-  }
-`;
-const SkillPorcentajeCont = styled.div`
-  width: 69%;
-  position: relative;
-  margin: 0 0 0 15px;
-`;
-const SkillPorcentaje = styled.span`
-  max-width: ${(props) => props.width};
-  background: var(--primary-color);
-  border: 5px solid var(--primary-color);
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: 10px;
-  border-radius: 10px;
+  } */
 `;
 const ValueSkill = styled.span`
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 0 10px;
+  font-weight: 500;
+  @media (min-width: 1000px) {
+    font-size: 20px;
+  }
 `;
 const About = () => {
   return (
     <Container>
       <Title margin="0 0 10px 0">About me</Title>
       <Info>
-        I{"'"}m Jorge, an anime enthusiast and programmer. Experienced Honduran
-        web developer, trained in all stages of advanced web development.
-        Bringing expertise in designing, installing, testing and maintaining web
-        systems. Equipped with a diverse and promising skill set. Experience
-        with ReactJS
+        Hello my name is Jorge, a Honduran programmer experienced in web
+        development. web developer, trained in all stages of development.
+        Bringing experience in design, installation, testing and maintenance of
+        web systems. web systems. Equipped with a diverse and promising skill
+        set. Experience with ReactJS
       </Info>
       <Title margin="10px 0">My Skills</Title>
       <SkillsContainer>
@@ -74,10 +70,7 @@ const About = () => {
           return (
             <Skill key={key}>
               <Image src={image} alt={title} />
-              <SkillPorcentajeCont>
-                <SkillPorcentaje width={`${Value}%`}></SkillPorcentaje>
-              </SkillPorcentajeCont>
-              <ValueSkill>{Value}%</ValueSkill>
+              <ValueSkill>{Value}</ValueSkill>
             </Skill>
           );
         })}
