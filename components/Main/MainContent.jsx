@@ -7,7 +7,7 @@ const ContainerInfo = styled.main`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 31rem 0 19rem 0;
+  margin: 27rem 0 19rem 0;
   @media (min-width: 1000px) {
     margin: 28rem 0 15rem 0;
   }
