@@ -50,7 +50,7 @@ const values = [
 const skillsData = [
   { image: Html, key: 1, title: "Html5", Value: "Advanced" },
   { image: Css, key: 2, title: "Css3", Value: "Advanced" },
-  { image: JavascriptIcon, key: 3, title: "Intermediate", Value: "Avanzado" },
+  { image: JavascriptIcon, key: 3, title: "JavaScript", Value: "Intermediate" },
   { image: Typescript, key: 4, title: "Typescript", Value: "Basic" },
   { image: Python, key: 5, title: "Python", Value: "Intermediate" },
   { image: ReactIcon, key: 6, title: "ReactJS", Value: "Advanced" },
