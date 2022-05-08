@@ -68,7 +68,7 @@ const ListNav = styled.li`
   }
 `;
 const Navigation = () => {
-  const [y, setY] = useState(document.scrollingElement.scrollHeight);
+  const [y, setY] = useState(0);
   const handleNavigation = useCallback(() => {
     setY(window.scrollY);
   }, [y]);
@@ -95,7 +95,6 @@ const Navigation = () => {
     <Header border={y >= 159 ? "1px solid var(--secondary-color)" : "none"}>
       <Nav bg={y >= 159 ? "var(--bg-transparent)" : "var(--bg-primary)"}>
         <Logo href="#">JORGEDEV</Logo>
-        {console.log(y)}
         {width <= 1000 ? (
           <FontAwesomeIcon
             onClick={ShowItems}
