@@ -1,31 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import JavascriptIcon from "../../public/icons8-javascript.svg";
-import Figma from "../../public/icons8-figma.svg";
-import Git from "../../public/icons8-git.svg";
-import Github from "../../public/icons8-github.svg";
-import Html from "../../public/icons8-html-5.svg";
-import Css from "../../public/icons8-css3.svg";
-import Python from "../../public/icons8-python.svg";
-import Node from "../../public/icons8-nodejs.svg";
-import Npm from "../../public/icons8-npm.svg";
-import Typescript from "../../public/icons8-typescript.svg";
-import ReactIcon from "../../public/icons8-react-native.svg";
 import Image from "next/image";
 //skills
-const skillsData = [
-  { image: Html, key: 1, title: "Html5", Value: 100 },
-  { image: Css, key: 2, title: "Css3", Value: 100 },
-  { image: JavascriptIcon, key: 3, title: "JavasCript", Value: 70 },
-  { image: Node, key: 4, title: "NodeJs", Value: 80 },
-  { image: Npm, key: 5, title: "NPM", Value: 100 },
-  { image: Git, key: 6, title: "Git", Value: 90 },
-  { image: Github, key: 7, title: "Github", Value: 100 },
-  { image: Typescript, key: 8, title: "Typescript", Value: 40 },
-  { image: ReactIcon, key: 9, title: "ReactJs", Value: 85 },
-  { image: Python, key: 10, title: "Python", Value: 60 },
-  { image: Figma, key: 11, title: "Figma", Value: 80 },
-];
+import { skillsData } from "../../info/Proyects";
 const Container = styled.section`
   background-color: var(--secondary-color);
   padding: 15px;

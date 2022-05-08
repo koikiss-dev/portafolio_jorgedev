@@ -36,7 +36,7 @@ const DownIcon = styled.div`
   position: relative;
   justify-content: center;
   animation: ${animationDown} 3s ease-in-out infinite;
-  margin: 0 0 65px 0;
+  margin: 0px 0 100px 0;
 `;
 export default function Home() {
   return (

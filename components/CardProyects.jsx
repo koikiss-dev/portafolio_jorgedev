@@ -7,6 +7,10 @@ export const ContainerCard = styled.div`
   padding: 20px 20px 30px 20px;
   margin: 0 0 20px 0;
   border-radius: 10px;
+  transition: transform ease-in-out 0.2s;
+  &:hover {
+    transform: scale(1.02);
+  }
   @media (min-width: 1000px) {
     margin: 0;
   }
@@ -38,7 +42,7 @@ const DivLinks = styled.div`
     display: flex;
     justify-content: center;
     cursor: pointer;
-    transition: transform ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
     &:hover {
       transform: scale(0.9);
     }

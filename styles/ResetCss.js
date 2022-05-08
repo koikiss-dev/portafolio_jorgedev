@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
         --karla: 'Karla', sans-serif;
         --rubik: 'Rubik', sans-serif;
         --bg-primary: #0b0f15;
+        --bg-transparent: hsla(216, 31%, 6%, 0.9);
         --primary-color: #2f80ff;
         --secondary-color: #1d232b; 
     }    

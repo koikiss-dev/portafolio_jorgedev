@@ -8,9 +8,9 @@ const IndexLayaut = ({ children, title }) => {
         <title>{title}</title>
         <meta name="description" content="JorgeDevJ" />
       </Head>
-      <header>
-        <Navigation />
-      </header>
+
+      <Navigation />
+
       {children}
     </>
   );
