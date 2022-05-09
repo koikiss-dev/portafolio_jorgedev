@@ -25,6 +25,7 @@ const ImageCont = styled.div`
   .image:hover {
     transform: scale(1.2);
     border-radius: 0px;
+    filter: blur(2px);
   }
 `;
 const Title = styled.h3`

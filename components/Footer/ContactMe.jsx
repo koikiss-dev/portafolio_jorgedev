@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Title } from "../Main/Abaut";
 const ContactContainer = styled.section`
-  margin: 20px 0;
-  padding: 0 15px;
+  margin: 20px 0 0 0;
+  padding: 20px 15px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
 `;
-const Form = styled.form``;
+
+/* const Form = styled.form``;
 const ContainerInfo = styled.div`
   .inputContainer {
     display: flex;
@@ -26,11 +30,12 @@ const Input = styled.input`
 const InfoMain = styled.textarea`
   width: 80%;
   height: 50%;
-`;
+`; */
 const ContactMe = () => {
   return (
     <ContactContainer>
-      <Title>Contact me</Title>
+      <span>Made with love</span>
+      {/* <Title>Contact me</Title>
       <Form onSubmit={(e) => e.preventDefault()}>
         <ContainerInfo>
           <div className="inputContainer">
@@ -42,7 +47,7 @@ const ContactMe = () => {
             <InfoMain></InfoMain>
           </div>
         </ContainerInfo>
-      </Form>
+      </Form> */}
     </ContactContainer>
   );
 };

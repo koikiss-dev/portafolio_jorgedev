@@ -70,7 +70,7 @@ const About = () => {
           return (
             <Skill key={key}>
               <Image src={image} alt={title} />
-              <ValueSkill>{Value}</ValueSkill>
+              <ValueSkill>{title}</ValueSkill>
             </Skill>
           );
         })}
