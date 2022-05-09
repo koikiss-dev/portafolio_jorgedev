@@ -19,6 +19,7 @@ const Nav = styled.nav`
   backdrop-filter: blur(10px);
   @media (min-width: 1000px) {
     background-color: ${(props) => props.bg};
+    backdrop-filter: blur(10px);
   }
   /* border-bottom: 1px solid var(--secondary-color); */
   position: relative;
