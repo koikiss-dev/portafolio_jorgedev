@@ -16,6 +16,7 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   background-color: var(--bg-primary);
+  backdrop-filter: blur(10px);
   @media (min-width: 1000px) {
     background-color: ${(props) => props.bg};
   }
