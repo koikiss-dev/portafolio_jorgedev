@@ -41,12 +41,7 @@ const Proyects = [
     imagesrc: Country,
   },
 ];
-const values = [
-  "A frontend developer 🤪",
-  "A designer 🤔",
-  "A student 🤓",
-  "Latin 💯",
-];
+const values = ["A frontend developer", "A designer", "A student", "Latin"];
 const skillsData = [
   { image: Html, key: 1, title: "Html5", Value: "Advanced" },
   { image: Css, key: 2, title: "Css3", Value: "Advanced" },

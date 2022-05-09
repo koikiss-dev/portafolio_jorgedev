@@ -1,8 +1,8 @@
-import { useState, useEffect, useCallback } from "react";
-import { useWindowSize } from "../hooks/useWindow";
+import { useNav } from "../hooks/useNav";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const Header = styled.header`
   position: fixed;
   width: 100%;
@@ -29,6 +29,7 @@ const Logo = styled.a`
 `;
 const UlItems = styled.ul`
   display: ${(props) => props.visible};
+  border-bottom: ${(props) => props.border};
   position: absolute;
   padding: 15px;
   top: 5rem;
@@ -36,9 +37,8 @@ const UlItems = styled.ul`
   right: 0;
   width: 100%;
   background-color: var(--bg-primary);
-
   transition: display ease-in-out 0.2s;
-  border-radius: 0 0 15px 15px;
+  /* border-radius: 0 0 15px 15px; */
   @media (min-width: 1000px) {
     position: inherit;
 
@@ -68,33 +68,11 @@ const ListNav = styled.li`
   }
 `;
 const Navigation = () => {
-  const [y, setY] = useState(0);
-
-  const { width } = useWindowSize();
-  const [toggle, setToggle] = useState(false);
-  const ShowItems = () => {
-    setToggle(!toggle);
-  };
-  const handleNavigation = useCallback(() => {
-    setY(window.scrollY);
-  }, [y]); //detect scroll
-  useEffect(() => {
-    if (width >= 1000) {
-      setToggle(true);
-    } else {
-      setToggle(false);
-    }
-  }, [width]);
-  useEffect(() => {
-    window.addEventListener("scroll", handleNavigation);
-    return () => {
-      window.removeEventListener("scroll", handleNavigation);
-    };
-  }, [handleNavigation]);
+  const [y, toggle, width, ShowItems] = useNav();
   return (
     <Header border={y >= 159 ? "2px solid var(--secondary-color)" : "none"}>
       <Nav bg={y >= 159 ? "var(--bg-transparent)" : "var(--bg-primary)"}>
-        <Logo href="#">JORGEDEV</Logo>
+        <Logo href="#">JORGEDEVJ</Logo>
         {width <= 1000 ? (
           <FontAwesomeIcon
             onClick={ShowItems}
@@ -124,6 +102,7 @@ const Navigation = () => {
           </ListNav>
         </UlItems>
       </Nav>
+      {/* <div ref={ref}>{isComponentVisible && <p>Dropdown Component</p>}</div> */}
     </Header>
   );
 };

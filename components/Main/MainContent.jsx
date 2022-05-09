@@ -29,6 +29,7 @@ const Button = styled.button`
   border-radius: 5px;
   margin: ${(props) => props.margin};
   transition: transform ease-in-out 0.2s;
+  cursor: pointer;
   &:hover {
     transform: scale(0.9);
   }
@@ -36,9 +37,9 @@ const Button = styled.button`
 const MainContent = () => {
   return (
     <ContainerInfo>
-      <Info>Hey 👋, my name is Jorge </Info>
+      <Info>Hi, I am Jorge </Info>
       <Qualities />
-      <Button margin="20px 0">Download my cv 😎</Button>
+      <Button margin="20px 0">Download my cv{/*  😎 */}</Button>
     </ContainerInfo>
   );
 };
