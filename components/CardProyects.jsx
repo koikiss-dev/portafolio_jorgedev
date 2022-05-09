@@ -27,7 +27,6 @@ const ImageCont = styled.div`
     border-radius: 0px;
   }
 `;
-/* const InfoCont = styled.div``; */
 const Title = styled.h3`
   font-size: 20px;
   margin: 0 0 10px 0;

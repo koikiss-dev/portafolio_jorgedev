@@ -102,7 +102,6 @@ const Navigation = () => {
           </ListNav>
         </UlItems>
       </Nav>
-      {/* <div ref={ref}>{isComponentVisible && <p>Dropdown Component</p>}</div> */}
     </Header>
   );
 };
