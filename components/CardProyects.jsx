@@ -62,7 +62,13 @@ const CardProyects = ({
   return (
     <ContainerCard>
       <ImageCont>
-        <Image className="image" src={srcImage} alt={nameProyect} />
+        <Image
+          className="image"
+          src={srcImage}
+          alt={nameProyect}
+          placeholder="blur"
+          blurDataURL
+        />
       </ImageCont>
       <div>
         <Title>{nameProyect}</Title>

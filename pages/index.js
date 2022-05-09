@@ -1,14 +1,14 @@
 import MainContent from "../components/Main/MainContent";
 import About from "../components/Main/Abaut";
 import IndexLayaut from "./layaut/IndexLayaut";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
-import { keyframes } from "styled-components";
 import { Title } from "../components/Main/Abaut";
 import ContactMe from "../components/Footer/ContactMe";
 import { Proyects } from "../info/Proyects";
 import CardProyects from "../components/CardProyects";
+import styled from "styled-components";
+import { keyframes } from "styled-components";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const animationDown = keyframes`
 from{
