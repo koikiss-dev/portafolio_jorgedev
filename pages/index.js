@@ -41,7 +41,7 @@ const DownIcon = styled.div`
 export default function Home() {
   return (
     <>
-      <IndexLayaut title={"JorgeDevJ | Portafolio"}>
+      <IndexLayaut title={"JorgeDevJ | Portfolio"}>
         <MainContent />
         <DownIcon>
           <FontAwesomeIcon className="fa-2xl" icon={faAngleDown} />
