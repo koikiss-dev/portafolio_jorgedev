@@ -59,7 +59,7 @@ const About = () => {
       <Title margin="0 0 10px 0">About me</Title>
       <Info>
         Hello my name is Jorge, a Honduran programmer experienced in web
-        development. web developer, trained in all stages of development.
+        development. Web developer, trained in all stages of development.
         Bringing experience in design, installation, testing and maintenance of
         web systems. web systems. Equipped with a diverse and promising skill
         set. Experience with ReactJS
