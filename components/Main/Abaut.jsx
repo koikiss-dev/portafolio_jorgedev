@@ -57,7 +57,12 @@ const About = () => {
   return (
     <Container>
       <Title margin="0 0 10px 0">About me</Title>
-      <Info></Info>
+      <Info>
+        Hi, I am Jorge, a Honduran programmer with experience in web
+        development. Trained in all stages of development. Bringing experience
+        in design, installation, testing and maintenance of web systems.
+        Equipped with a diverse and promising skill set. Experience with ReactJS
+      </Info>
       <Title margin="10px 0">My Skills</Title>
       <SkillsContainer>
         {skillsData.map(({ image, key, title, Value }) => {
