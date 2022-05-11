@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Qualities from "./Qualities";
+import { saveAs } from "file-saver";
+/* import JorgeCV from "../../JorgeDuronCV.pdf"; */
 const ContainerInfo = styled.main`
   padding: 15px;
   display: flex;
@@ -33,13 +35,30 @@ const Button = styled.button`
   &:hover {
     transform: scale(0.9);
   }
+  & > a {
+    color: #fff;
+  }
 `;
+const saveFile = () => {
+  saveAs(
+    "https://mega.nz/file/9jZDEKpQ#mT09tGTOtvu9QipaqywQklhZFp9y63ODXr2FtoO66s0",
+    "JorgeDuronCV"
+  );
+};
 const MainContent = () => {
   return (
     <ContainerInfo>
       <Info>Hi, I am Jorge </Info>
       <Qualities />
-      <Button margin="20px 0">Download my cv{/*  😎 */}</Button>
+      <Button margin="20px 0">
+        <a
+          target="blank"
+          href="https://mega.nz/file/9jZDEKpQ#mT09tGTOtvu9QipaqywQklhZFp9y63ODXr2FtoO66s0"
+          download={"JorgeDuronCV.pdf"}
+        >
+          Download my cv
+        </a>
+      </Button>
     </ContainerInfo>
   );
 };
