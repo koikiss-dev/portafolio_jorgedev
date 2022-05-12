@@ -63,6 +63,7 @@ const About = () => {
         in design, installation, testing and maintenance of web systems.
         Equipped with a diverse and promising skill set. Experience with ReactJS
       </Info>
+
       <Title margin="10px 0">My Skills</Title>
       <SkillsContainer>
         {skillsData.map(({ image, key, title, Value }) => {
