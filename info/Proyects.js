@@ -25,7 +25,7 @@ const Proyects = [
   {
     name: "Weather App",
     repo: "https://github.com/JorgeDevJ/Weather-app",
-    page: "https://clouds-app.vercel.app/",
+    page: "https://weatherapp-pro.netlify.app/",
     imagesrc: Weather,
   },
   {
@@ -37,7 +37,7 @@ const Proyects = [
   {
     name: "Country Search",
     repo: "https://github.com/JorgeDevJ/country-search",
-    page: "https://country-search-pro.vercel.app/",
+    page: "https://countryrest.netlify.app/",
     imagesrc: Country,
   },
 ];
