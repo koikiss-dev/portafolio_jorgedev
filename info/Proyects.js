@@ -1,26 +1,41 @@
-import Wallpaper from "../public/proyect1.jpg";
-import Weather from "../public/proyect2.jpg";
-import Country from "../public/proyect3.jpg";
-import Github from "../public/proyect4.jpg";
+import Wallpaper from "../assets/proyect1.jpg";
+import Weather from "../assets/proyect2.jpg";
+import Country from "../assets/proyect3.jpg";
+import Github from "../assets/proyect4.jpg";
+import Movie from '../assets/movie_mac.png'
+import Manga from '../assets/manga_store.png'
 //images
-import JavascriptIcon from "../public/icons8-javascript.svg";
-import Figma from "../public/icons8-figma.svg";
-import Git from "../public/icons8-git.svg";
-import GithubIcon from "../public/icons8-github.svg";
-import Html from "../public/icons8-html-5.svg";
-import Css from "../public/icons8-css3.svg";
-import Python from "../public/icons8-python.svg";
-import Nextjs from "../public/nextjs.svg";
-import Node from "../public/icons8-nodejs.svg";
-import Npm from "../public/icons8-npm.svg";
-import Typescript from "../public/icons8-typescript.svg";
-import ReactIcon from "../public/icons8-react-native.svg";
+
+import JavascriptIcon from '../assets/icons8-javascript.svg'
+import Figma from "../assets/icons8-figma.svg";
+import Git from "../assets/icons8-git.svg";
+import GithubIcon from "../assets/icons8-github.svg";
+import Html from "../assets/icons8-html-5.svg";
+import Css from "../assets/icons8-css3.svg";
+import Python from "../assets/icons8-python.svg";
+import Nextjs from "../assets/nextjs.svg";
+import Node from "../assets/icons8-nodejs.svg";
+import Npm from "../assets/icons8-npm.svg";
+import Typescript from "../assets/icons8-typescript.svg";
+import ReactIcon from "../assets/icons8-react-native.svg";
 const Proyects = [
   {
     name: "Wallpaper Gen",
     repo: "https://github.com/JorgeDevJ/wallpaper-gen",
     page: "https://wallpaper-pro.netlify.app/",
     imagesrc: Wallpaper,
+  },
+  {
+    name: "Movie Cube",
+    repo: "https://github.com/JorgeDevJ/country-search",
+    page: "https://movie-cube.netlify.app/",
+    imagesrc: Movie,
+  },
+  {
+    name: "Manga Store",
+    repo: "https://dribbble.com/shots/18848709-Manga-Store-Application",
+    page: "https://dribbble.com/shots/18848709-Manga-Store-Application",
+    imagesrc: Manga,
   },
   {
     name: "Weather App",

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { useWindowSize } from "../hooks/useWindow";
+import { useWindowSize } from "./useWindow";
 export const useNav = () => {
   const [y, setY] = useState(0); //scroll state
   const { width } = useWindowSize();
@@ -12,18 +12,10 @@ export const useNav = () => {
   const handleNavigation = useCallback(() => {
     setY(window.scrollY);
     setToggle(false);
-    if (width >= 1000) {
-      setToggle(true);
-    } else {
-      setToggle(false);
-    }
+    width >= 1000 ? setToggle(true) : setToggle(false)
   }, [y]); //detect scroll
   useEffect(() => {
-    if (width >= 1000) {
-      setToggle(true);
-    } else {
-      setToggle(false);
-    }
+    width >= 1000 ? setToggle(true) : setToggle(false)
   }, [width]);
   useEffect(() => {
     window.addEventListener("scroll", handleNavigation);

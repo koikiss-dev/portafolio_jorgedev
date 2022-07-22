@@ -64,8 +64,9 @@ const ListNav = styled.li`
   }
   & > a {
     color: var(--primary-color);
+    transition: all ease-in-out .2s;
     &:hover {
-      text-decoration: underline;
+      color: #ffff;
     }
   }
 `;
@@ -97,9 +98,19 @@ const Navigation = () => {
               LinkedIn
             </a>
           </ListNav>
-          <ListNav>
+          <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
             <a href="https://twitter.com/jdd2_" target="blank">
               Twitter
+            </a>
+          </ListNav>
+          <ListNav margin="0 0 3rem 0" marginMobile="0 2rem 0 0">
+            <a href="https://dribbble.com/JDD2" target="blank">
+              Dribbble
+            </a>
+          </ListNav>
+          <ListNav>
+            <a href="https://www.behance.net/jorgeduron_d" target="blank">
+              Behance
             </a>
           </ListNav>
         </UlItems>

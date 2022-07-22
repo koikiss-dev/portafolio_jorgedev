@@ -8,6 +8,9 @@ export const ContainerCard = styled.div`
   margin: 0 0 20px 0;
   border-radius: 10px;
   transition: transform ease-in-out 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &:hover {
     transform: scale(1.02);
   }
@@ -21,6 +24,7 @@ const ImageCont = styled.div`
     transform: scale(1);
     border-radius: 5px;
     transition: all cubic-bezier(0.79, 0.33, 0.14, 0.53) 0.2s;
+    object-fit: cover;
   }
   .image:hover {
     transform: scale(1.2);
@@ -66,6 +70,7 @@ const CardProyects = ({
           className="image"
           src={srcImage}
           alt={nameProyect}
+          height="750"
           placeholder="blur"
           blurDataURL
         />
@@ -80,7 +85,7 @@ const CardProyects = ({
           </div>
           <div className="buttonLink">
             <Links href={linkPoryectGithub} target="blank">
-              Github repo
+              Repo
             </Links>
           </div>
         </DivLinks>
