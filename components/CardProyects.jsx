@@ -70,7 +70,8 @@ const CardProyects = ({
           className="image"
           src={srcImage}
           alt={nameProyect}
-          height="750"
+          width="800"
+          height="400"
           placeholder="blur"
           blurDataURL
         />
