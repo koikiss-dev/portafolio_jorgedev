@@ -58,10 +58,11 @@ const About = () => {
     <Container>
       <Title margin="0 0 10px 0">About me</Title>
       <Info>
-        Hi, I am Jorge, a Honduran programmer with experience in web
-        development. Trained in all stages of development. Bringing experience
-        in design, installation, testing and maintenance of web systems.
-        Equipped with a diverse and promising skill set. Experience with ReactJS
+        Hi, my name is Jorge and I'm a junior web developer from Honduras. I have always been interested in technology and the way it can change people's lives. That's why I decided to pursue a career in web development.
+
+I have experience working with ReactJS, NextJS, Figma, and nodeJS, and I have completed several projects on my own using these technologies. I am constantly learning and expanding my skillset, and I am always looking for new challenges to take on.
+
+In my spare time, I enjoy building websites and applications for fun, and I am always looking for ways to improve my coding skills. I believe that with hard work and determination, anything is possible, and I am determined to succeed in my career as a web developer.
       </Info>
 
       <Title margin="10px 0">My Skills</Title>
