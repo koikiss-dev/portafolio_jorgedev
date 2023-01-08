@@ -57,12 +57,13 @@ const About = () => {
   return (
     <Container>
       <Title margin="0 0 10px 0">About me</Title>
-      <Info>
-      Good day, my name is Jorge and I am a junior web developer from Honduras. I have always had an interest in technology and how it can impact people's lives, which is why I decided to pursue a career in web development.
+      <Info>{
+        `Hi, my name is Jorge and I am a junior web developer from Honduras. I have a keen interest in technology and how it can make a positive difference in people's lives. This is why I decided to pursue a career in web development.
 
-I have experience utilizing ReactJS, NextJS, Figma, and nodeJS, and have completed several individual projects with these technologies. I am consistently learning and expanding my skill set, and am always seeking new challenges.
-
-In my leisure time, I enjoy constructing websites and applications for enjoyment and am constantly searching for ways to enhance my coding abilities. I believe that through hard work and determination, anything is possible and am resolute in achieving success in my career as a web developer.
+        I have experience working with ReactJS, NextJS, Figma, and nodeJS, and have completed several individual projects using these technologies. I am committed to continuously learning and expanding my skillset, and I am always looking for new challenges to take on.
+        
+        In my spare time, I enjoy creating websites and applications for fun and am constantly looking for ways to improve my coding skills. I believe that with hard work and determination, anything is achievable, and I am determined to succeed in my career as a web developer.`
+      }
       </Info>
 
       <Title margin="10px 0">My Skills</Title>

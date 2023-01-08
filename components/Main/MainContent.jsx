@@ -47,8 +47,8 @@ const MainContent = () => {
       <Button
         margin="20px 0"
         target="blank"
-        href="https://res.cloudinary.com/dxp8a4fhe/image/upload/v1652303216/Jorge_Alberto_Posadas_Dur%C3%B3n_-_Frontend_Developer_ingasc.pdf"
-        download={"https://res.cloudinary.com/dxp8a4fhe/image/upload/v1652303216/Jorge_Alberto_Posadas_Dur%C3%B3n_-_Frontend_Developer_ingasc.pdf"}
+        href="https://res.cloudinary.com/dxp8a4fhe/image/upload/v1673147812/Jorge_Alberto_Posadas_Dur%C3%B3n_-_Frontend_Developer_yhbwk9.pdf"
+        download={"https://res.cloudinary.com/dxp8a4fhe/image/upload/v1673147812/Jorge_Alberto_Posadas_Dur%C3%B3n_-_Frontend_Developer_yhbwk9.pdf"}
       >
         Download my cv
       </Button>
